@@ -1,5 +1,11 @@
 {
   "dependencies": {
     "@chainlink/functions-toolkit": "^0.3.2"
+  },
+  "scripts": {
+    "simulate": "node ./functions/simulators/alpacaMintSimulator.js",
+    "mint": "source .env && node ./functions/simulators/alpacaMintSimulator.js",
+    "redeem": "source .env && node ./functions/simulators/alpacaRedeemSimulator.js",
+    "uploadSecrets": "node ./functions/uploadSecrets.js"
   }
 }
